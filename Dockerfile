@@ -40,6 +40,6 @@ RUN apk add --no-cache --update curl runit tzdata \
     && ln -s /workdir/service/* /etc/service/
 
 COPY --from=builder-caddy /usr/bin/caddy /usr/bin/caddy
-COPY --from=builder-alist /app/bin/alist /usr/bin/
+COPY --from=builder-openlist /app/bin/openlist /usr/bin/
 
 ENTRYPOINT ["runsvdir","/etc/service"]
