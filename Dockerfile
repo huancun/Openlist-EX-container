@@ -4,7 +4,7 @@ RUN xcaddy build \
   --with github.com/caddy-dns/cloudflare@d11ac0bfeab7475d8b89e2dc93f8c7a8b8859b8f
   
 
-FROM alpine AS builder-alist
+FROM alpine AS builder-openlist
 
 WORKDIR /app/
 RUN apk add --no-cache bash curl gcc git go musl-dev

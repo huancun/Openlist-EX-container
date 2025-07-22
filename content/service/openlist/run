@@ -6,4 +6,4 @@ export ADDR=127.0.0.1
 export HTTP_PORT=${ALIST_PORT}
 cd /
 
-exec alist server --no-prefix
+exec openlist server --no-prefix
