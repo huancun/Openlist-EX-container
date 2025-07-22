@@ -1,13 +1,13 @@
 version: '3.3'
 services:
-  alist-ex:
-    image: ghcr.io/wy580477/alist-ex-container:latest
-    # If you need ffmpeg, use this image: ghcr.io/wy580477/alist-ex-container:latest-ffmpeg
-    container_name: alist-ex
+  openlist-ex:
+    image: ghcr.io/huancun/openlist-ex-container:latest
+    # If you need ffmpeg, use this image: ghcr.io/huancun/openlist-ex-container:latest-ffmpeg
+    container_name: openlist-ex
     network_mode: host
     restart: unless-stopped
     volumes:
-      - ~/alist:/data
+      - ~/openlist:/data
       # Volume for storing data.
     environment:
       CADDY_DOMAIN: ""
@@ -33,6 +33,6 @@ services:
 
       # The following envs are list of ports listened on localhost. 
       # You don't need to change them unless you have port conflict.
-      ALIST_PORT: 61600
+      OPENLIST_PORT: 61600
       ARIA2_PORT: 61601
       QBT_WEBUI_PORT: 61602

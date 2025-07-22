@@ -3,7 +3,7 @@
 # See https://fontawesome.com/icons for icons options
 # Modified by wy580477 for customized container <https://github.com/wy580477>
 
-title: "Alist-EX Dashboard"
+title: "Openlist-EX Dashboard"
 subtitle: "Homer"
 logo: "logo.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
@@ -77,8 +77,8 @@ services:
   - name: "Applications"
     icon: "fas fa-cloud"
     items:
-      - name: "Alist"
-        logo: "./assets/tools/alist.svg"
+      - name: "Openlist"
+        logo: "./assets/tools/Openlist.svg"
         tag: "app"
         url: "/"
         target: "_blank" # optional html a tag target attribute

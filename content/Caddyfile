@@ -49,6 +49,6 @@
 		root * /workdir/homer
 		file_server
 	}
-	# Configure alist
-	reverse_proxy * localhost:{$ALIST_PORT}	
+	# Configure openlist
+	reverse_proxy * localhost:{$OPENLIST_PORT}	
 }

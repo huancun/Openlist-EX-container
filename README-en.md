@@ -1,4 +1,4 @@
-# Alist-EX-container
+# Openlist-EX-container
 
 [Overview](#Overview)
 
@@ -11,14 +11,14 @@
 
 ## <a id="Overview"></a>Overview
 
-This project integrates Alist, Aria2, qBittorrent and Caddy reverse proxy in a single container.
+This project integrates Openlist, Aria2, qBittorrent and Caddy reverse proxy in a single container.
 
 Support AMD64/Arm64/Armv7 architecture.
 
 
 ## <a id="Deployment"></a>Deployment
 
- 1. Download [docker-compose file](https://github.com/wy580477/Alist-EX-container/blob/main/docker-compose.yml) and save as `docker-compose.yml`.
+ 1. Download [docker-compose file](https://github.com/huancun/Openlist-EX-container/blob/main/docker-compose.yml) and save as `docker-compose.yml`.
 
  2. Set envs and run container with following command:
 
@@ -27,9 +27,9 @@ Support AMD64/Arm64/Armv7 architecture.
 
 ## <a id="first"></a>First run
 
-1. Run `docker logs alist-ex` , you can get the initial password of alist.
+1. Run `docker logs openlist-ex` , you can get the initial password of openlist.
 
-2. Visit < ip address or domain name >:< CADDY_WEB_PORT > to open alist.
+2. Visit < ip address or domain name >:< CADDY_WEB_PORT > to open openlist.
 
 3. Visit < ip address or domain name >:< CADDY_WEB_PORT >/portalpage to open portal page.
 
@@ -41,7 +41,7 @@ Support AMD64/Arm64/Armv7 architecture.
 
 7. Offline download settings:
 
-   Open alist manage page, `tools` > `Other`.
+   Open openlist manage page, `tools` > `Other`.
 
    Fill Aria2 uri with: http://localhost:61601/jsonrpc , and Aria2 Secret Token.
 
@@ -50,18 +50,18 @@ Support AMD64/Arm64/Armv7 architecture.
 
 ## <a id="more"></a>More usages and precautions
 
- 1. If you migrate from previous alist installation, you can bind container volume to the previous alist data directory.
+ 1. If you migrate from previous openlist installation, you can bind container volume to the previous openlist data directory.
 
  2. Aria2 settings which changed in AriaNg panel will be reset after Aria2 restarted. You can modify aria2/aria2.conf file in data directory to change Aria2 settings persistently.
 
- 3. Set alist admin password.
+ 3. Set openlist admin password.
 
  ```
      # Set random password
-     docker exec alist-ex alist admin random
+     docker exec openlist-ex openlist admin random
 
      # Set admin password as 'NEW_PASSWORD'
-     docker exec alist-ex alist admin set NEW_PASSWORD
+     docker exec openlist-ex openlist admin set NEW_PASSWORD
 ```
 
  4. You can check logs of aria2/qBittorrent/caddy from log dir in container volume.
