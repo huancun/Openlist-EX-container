@@ -7,7 +7,7 @@ RUN xcaddy build \
 FROM alpine AS builder-openlist
 
 WORKDIR /app/
-RUN apk add --no-cache bash curl gcc git go musl-dev
+RUN apk add --no-cache bash curl gcc git go musl-dev jq
 COPY ./upstream-repo/go.mod ./upstream-repo/go.sum ./
 RUN go mod download
 COPY ./upstream-repo ./
