@@ -78,7 +78,7 @@ services:
     icon: "fas fa-cloud"
     items:
       - name: "Openlist"
-        logo: "./assets/tools/Openlist.svg"
+        logo: "./assets/tools/openlist.svg"
         tag: "app"
         url: "/"
         target: "_blank" # optional html a tag target attribute
