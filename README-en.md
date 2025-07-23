@@ -21,7 +21,7 @@ Based on [Alist-EX-container](https://github.com/wy580477/Alist-EX-container), t
 - **Aria2**: Efficient offline download
 - **qBittorrent**: BT/PT download
 - **Caddy**: Auto HTTPS reverse proxy
-- **AriaNg/VueTorrent/Homer**: Multiple web panels for easy operation
+- **AriaNg/VueTorrent**: Multiple web panels for easy operation
 
 Supports AMD64/Arm64/Armv7 architectures, auto HTTPS, ready to use out of the box.
 
@@ -88,7 +88,6 @@ Supports AMD64/Arm64/Armv7 architectures, auto HTTPS, ready to use out of the bo
 
 - AriaNg panel changes to Aria2 settings will be lost after restart. Edit `aria2/aria2.conf` for persistent settings.
 - qBittorrent WebUI language can be changed in tools > options.
-- Homer portal page is customizable, config file: `homer_conf/homer.yml`.
 
 ---
 

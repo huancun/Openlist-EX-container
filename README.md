@@ -22,7 +22,7 @@
 - **Aria2**：高效离线下载
 - **qBittorrent**：BT/PT 下载
 - **Caddy**：自动 HTTPS 反向代理
-- **AriaNg/VueTorrent/Homer**：多种 Web 面板，操作更便捷
+- **AriaNg/VueTorrent**：多种 Web 面板，操作更便捷
 
 支持 AMD64/Arm64/Armv7 架构，自动开启 HTTPS，开箱即用。
 
@@ -89,7 +89,6 @@
 
 - AriaNg 面板更改的 Aria2 设置，重启后会失效。建议直接编辑 `aria2/aria2.conf`。
 - qBittorrent WebUI 可在 tools > options 更改界面语言。
-- Homer 导航页可自定义，配置文件在 `homer_conf/homer.yml`。
 
 ---
 
