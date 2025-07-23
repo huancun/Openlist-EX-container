@@ -42,11 +42,11 @@
 		root * /workdir/vuetorrent/public
 		file_server
 	}
-	# Configure homer
+	# Configure home
 	handle /portalpage* {
 		redir /portalpage /portalpage/
 		uri strip_prefix /portalpage
-		root * /workdir/homer
+		root * /workdir/dist
 		file_server
 	}
 	# Configure openlist
